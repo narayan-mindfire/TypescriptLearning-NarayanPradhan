@@ -13,18 +13,18 @@ interface dataItem {
     category : Cat
 }
 let data : dataItem[] = [
-    {id: 10001, date: "2023-01-15", amount: 200.50, category: 0},
-    {id: 10002, date: "2023-03-10", amount: 450.00, category: 1},
-    {id: 10003, date: "2024-05-20", amount: 300.00, category: 2},
-    {id: 10004, date: "2024-07-18", amount: 125.75, category: 3},
-    {id: 10005, date: "2025-02-11", amount: 89.99, category: 4},
-    {id: 10006, date: "2025-04-22", amount: 400.00, category: 1},
-    {id: 10007, date: "2026-06-05", amount: 95.50, category: 0},
-    {id: 10008, date: "2026-08-12", amount: 120.00, category: 4},
-    {id: 10009, date: "2027-09-25", amount: 350.00, category:3},
-    {id: 10010, date: "2027-11-30", amount: 500.00, category: 1},
-    {id: 10011, date: "2028-03-08", amount: 250.00, category: 2},
-    {id: 10012, date: "2028-05-15", amount: 140.75, category: 0}
+    {id: 10001, date: "2023-01-15", amount: 200.50, category: Cat.Groceries},
+    {id: 10002, date: "2023-03-10", amount: 450.00, category: Cat.Rent},
+    {id: 10003, date: "2024-05-20", amount: 300.00, category: Cat.Entertainment},
+    {id: 10004, date: "2024-07-18", amount: 125.75, category: Cat.Utilities},
+    {id: 10005, date: "2025-02-11", amount: 89.99, category: Cat.Transportation},
+    {id: 10006, date: "2025-04-22", amount: 400.00, category: Cat.Rent},
+    {id: 10007, date: "2026-06-05", amount: 95.50, category: Cat.Groceries},
+    {id: 10008, date: "2026-08-12", amount: 120.00, category: Cat.Transportation},
+    {id: 10009, date: "2027-09-25", amount: 350.00, category:Cat.Utilities},
+    {id: 10010, date: "2027-11-30", amount: 500.00, category: Cat.Rent},
+    {id: 10011, date: "2028-03-08", amount: 250.00, category: Cat.Entertainment},
+    {id: 10012, date: "2028-05-15", amount: 140.75, category: Cat.Groceries}
 ];
 
 //function to print the sales data
