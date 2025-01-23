@@ -1,9 +1,9 @@
 // Shopping Cart
 //input -> keeping it global so that it can be accessed with reference(to make changes to the original array object)
 interface CartItem{
-    name? : string,
-    price? : number,
-    quantity? : number
+    name : string,
+    price : number,
+    quantity : number
 }
 let cart : CartItem[] = [
 { name: "Apple", price: 120, quantity: 3 },
@@ -36,10 +36,11 @@ const addItem = (name : string, price: number, qty: number) => {
         console.log(`Item already exists in your cart, consider updating item count for ${name}`)
         return
     }
-    var tempObj : CartItem = {}
-    tempObj.name = name
-    tempObj.price = price
-    tempObj.quantity = qty
+    const tempObj : CartItem = {
+        name: name,
+        price: price,
+        quantity: qty
+    }
     cart.push(tempObj)
 }
 
